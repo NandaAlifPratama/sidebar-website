@@ -1,0 +1,9 @@
+/* jumbotron */
+.jumbotron img {
+    width: 500px;
+    padding-top: 2rem;
+}
+
+#folder .btn {
+    margin: -20px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NandaAlif</title>
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/main.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/DSC_7422.JPG" alt="myfoto">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Nanda Alif</span>
+                    <span class="profession">About me</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Menu utama</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxl-microsoft icon' ></i>
+                            <span class="text nav-text">skills</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#folder">
+                            <i class='bx bx-folder-open icon'></i>
+                            <span class="text nav-text">My Folder</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bxl-gmail icon' ></i>
+                            <span class="text nav-text">My Gmail</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="https://www.facebook.com/nanda.a.pratama.902/">
+                            <i class='bx bxl-facebook icon' ></i>
+                            <span class="text nav-text">My Facebook</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="https://saweria.co/Nandaalifpratama">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">saweria</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+    </nav>
+
+    <section id="nama">
+     <div class="container">
+          <div class="row text-center">
+     <div class="nama-atas">
+          <h1>Selamat Datang</h1>
+           </div>
+          </div>
+     </div>
+    </section>
+
+    <!-- jumbotron -->
+    <section class="jumbotron jumbotron-fluid text-center">
+     <div class="container">
+       <img src="img/coding.png.jpg" alt="coding">
+       <p>kalian bisa menelusi website ini dengan melihat navbar disebelah</p>
+     </div>
+
+
+<!-- contact -->
+
+<!-- akhir contact -->
+
+<!-- footer -->
+<footer class="bg-success text-white text-center fs-5">
+    <p>Created &copy: Nanda Alif Pratama<a href="https://linktr.ee/nandaalifpratama" class="text-white-50 d-md-block">Follow link</a></p>
+</footer>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
